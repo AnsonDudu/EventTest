@@ -40,44 +40,36 @@ body{
 		top: 20px;
 		width: 500px;
 		margin: 0 auto;
-		padding: 10px 0;
 		text-align: center;
-		background-color: rgba(255,255,255,0.5);
+		background-color: rgba(255,255,255,0.7);
+		z-index: 9;
 	}
 
-	h1{
-		display: inline-block;
-		margin: 10px auto;
-		text-align: center;
-		color: #2c3a91;
-		text-shadow: 10px 1px 5px #ccc;
-	}
-
-	h2{
-		display: inline;
-		margin-left: 62.5%;
-		font-size: 1.5em;
-		color: #2c3a91;
-	}
-
-	i{
-		font-size: 30px;
-		color: #00ff55;
-		height: 20px;
-		width: 20px;
-		border-radius: 50%;
-		background-color: #f00;
+	.cover img{
+		width: 100%;
 	}
 
 	#point1{
+		background-image: url('../images/sprite.png');
+		background-size: 175%;
+		background-position: 10px 20px;
+		height: 150px;
+		width: 150px;
 		position: absolute;
-		left: 200px;
-		top: 300px;
+		left: 100px;
+		top: 75px;
+		opacity: 0.8;
+
 	}
 	#point2{
+		background-image: url('../images/sprite.png');
+		background-size: 175%;
+		background-position: 150px 15px;
+		height: 150px;
+		width: 150px;
 		position: absolute;
-		left: 280px;
-		top: 440px;
+		left: 50px;
+		top: 225px;
 	}
 	#point3{
 		position: absolute;
@@ -94,7 +86,7 @@ body{
 		position: absolute;
 		padding: 0px;
 		left: 230px;
-		top: 300px;
+		top: 200px;
 		width: 0px;
 		height: 0px;
 		background-color: #fff;
@@ -102,7 +94,48 @@ body{
 		background-image: url("../images/detail1_bg.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
+	}
 
+	#detail2{
+		position: absolute;
+		padding: 0px;
+		left: 310px;
+		top: 150px;
+		width: 0px;
+		height: 0px;
+		background-color: #fff;
+		overflow: hidden;
+		background-image: url("../images/detail1_bg.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	#detail3{
+		position: absolute;
+		padding: 0px;
+		left: 100px;
+		top: 200px;
+		width: 0px;
+		height: 0px;
+		background-color: #fff;
+		overflow: hidden;
+		background-image: url("../images/detail1_bg.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	#detail4{
+		position: absolute;
+		padding: 0px;
+		left: 275px;
+		top: 150px;
+		width: 0px;
+		height: 0px;
+		background-color: #fff;
+		overflow: hidden;
+		background-image: url("../images/detail1_bg.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 
 	.detail{
@@ -119,3 +152,10 @@ body{
 }
 
 
+.hide{
+	display: none;
+}
+
+.show{
+	display: block;
+}
