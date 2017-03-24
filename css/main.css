@@ -25,6 +25,10 @@ body{
 
 @media screen and (orientation:landscape) {
 
+	#waiting img{
+		width: 100%;
+	}
+
 	#background{
 		width: auto;
 		height: auto;
