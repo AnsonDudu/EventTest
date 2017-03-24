@@ -37,11 +37,12 @@ body{
 
 	.cover{
 		position: relative;
-		top: 20px;
-		width: 500px;
+		top: 10px;
+		width: 300px;
 		margin: 0 auto;
 		text-align: center;
-		background-color: rgba(255,255,255,0.7);
+		border:solid 1px #e0e0e0;
+/*		background-color: rgba(255,255,255,0.7);*/
 		z-index: 9;
 	}
 
@@ -49,47 +50,100 @@ body{
 		width: 100%;
 	}
 
+	#bubble1{
+		background-image: url('../images/bubble-sprite.png');
+		background-size: 250%;
+		background-position: 0px 0px;
+		height: 80px;
+		width: 80px;
+		position: absolute;
+		left: 50px;
+		top: 50px;
+	}
+
+	#bubble2{
+		background-image: url('../images/bubble-sprite.png');
+		background-size: 250%;
+		background-position: 0px 60px;
+		height: 50px;
+		width: 80px;
+		position: absolute;
+		left: 175px;
+		top: 250px;
+	}
+
+	#bubble3{
+		background-image: url('../images/bubble-sprite.png');
+		background-size: 250%;
+		background-position: 75px 75px;
+		height: 80px;
+		width: 80px;
+		position: absolute;
+		left: 600px;
+		top: 100px;
+	}
+
+	#bubble4{
+		background-image: url('../images/bubble-sprite.png');
+		background-size: 250%;
+		background-position: 75px 0px;
+		height: 80px;
+		width: 80px;
+		position: absolute;
+		left: 400px;
+		top: 280px;
+	}
+
 	#point1{
 		background-image: url('../images/sprite.png');
-		background-size: 175%;
-		background-position: 10px 20px;
-		height: 150px;
-		width: 150px;
+		background-size: 250%;
+		background-position: 0px 0px;
+		height: 80px;
+		width: 80px;
 		position: absolute;
-		left: 100px;
-		top: 75px;
+		left: 125px;
+		top: 100px;
 		opacity: 0.8;
 
 	}
 	#point2{
 		background-image: url('../images/sprite.png');
-		background-size: 175%;
-		background-position: 150px 15px;
-		height: 150px;
-		width: 150px;
+		background-size: 250%;
+		background-position: 115px 0px;
+		height: 120px;
+		width: 100px;
 		position: absolute;
-		left: 50px;
-		top: 225px;
+		left: 100px;
+		top: 240px;
 	}
 	#point3{
+		background-image: url('../images/sprite.png');
+		background-size: 200%;
+		background-position: -60px 360px;
 		position: absolute;
-		left: 520px;
-		top: 300px;
+		height: 100px;
+		width: 200px;
+		left: 400px;
+		top: 75px;
 	}
 	#point4{
+		background-image: url('../images/sprite.png');
+		background-size: 175%;
+		background-position: -20px 185px;
 		position: absolute;
-		left: 720px;
-		top: 220px;
+		height: 135px;
+		width: 175px;
+		left: 300px;
+		top: 275px;
 	}
 
 	#detail1{
 		position: absolute;
 		padding: 0px;
-		left: 230px;
-		top: 200px;
+		left: 200px;
+		top: 100px;
 		width: 0px;
 		height: 0px;
-		background-color: #fff;
 		overflow: hidden;
 		background-image: url("../images/detail1_bg.jpg");
 		background-size: cover;
@@ -99,13 +153,12 @@ body{
 	#detail2{
 		position: absolute;
 		padding: 0px;
-		left: 310px;
-		top: 150px;
+		left: 200px;
+		top: 225px;
 		width: 0px;
 		height: 0px;
-		background-color: #fff;
 		overflow: hidden;
-		background-image: url("../images/detail1_bg.jpg");
+		background-image: url("../images/detail2_bg.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
@@ -114,12 +167,11 @@ body{
 		position: absolute;
 		padding: 0px;
 		left: 100px;
-		top: 200px;
+		top: 100px;
 		width: 0px;
 		height: 0px;
-		background-color: #fff;
 		overflow: hidden;
-		background-image: url("../images/detail1_bg.jpg");
+		background-image: url("../images/detail3_bg.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
@@ -128,12 +180,12 @@ body{
 		position: absolute;
 		padding: 0px;
 		left: 275px;
-		top: 150px;
+		top: 25px;
 		width: 0px;
 		height: 0px;
 		background-color: #fff;
 		overflow: hidden;
-		background-image: url("../images/detail1_bg.jpg");
+		background-image: url("../images/detail4_bg.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 	}

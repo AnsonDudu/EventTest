@@ -1,17 +1,17 @@
-
 // 触摸事件绑定
 $("#point1").on("tap",function(){
-  $(this).addClass('animated shake');
+  $(".detail").addClass('hide');
+  $(this).addClass('tada');
   window.setTimeout(function(){
-  $('#point1').removeClass('animated shake');
-  },2000);
+  $('.point').removeClass('tada');
+  },1500);
 
 
   function showdiv(){
   	$('#detail1').animate({
 		"width": "360px",
 		"height": "180px",
-		"top" : "200px",
+		"top" : "100px",
 		"padding" : "20px",
   	},500,'linear');
 
@@ -21,23 +21,23 @@ $("#point1").on("tap",function(){
   window.setTimeout(showdiv,500);
 
   $('#background').on("tap",function(){
-    $("#detail1").addClass('hide')
+    $("#detail1").addClass('hide');
   })
 
 })
 
 $("#point2").on("tap",function(){
-  $(this).addClass('animated shake');
+  $(".detail").addClass('hide');
+  $(this).addClass('tada');
   window.setTimeout(function(){
-  $('#point2').removeClass('animated shake');
-  },2000);
+  $('.point').removeClass('tada');
+  },1500);
 
 
   function showdiv(){
     $('#detail2').animate({
     "width": "360px",
     "height": "180px",
-    "top" : "250px",
     "padding" : "20px",
     },500,'linear');
 
@@ -47,52 +47,24 @@ $("#point2").on("tap",function(){
   window.setTimeout(showdiv,500);
 
   $('#background').on("tap",function(){
-    $("#detail2").addClass('hide')
+    $("#detail2").addClass('hide');
   })
 
 })
-
-
-$("#point2").on("tap",function(){
-  $(this).addClass('animated shake');
-  window.setTimeout(function(){
-  $('#point2').removeClass('animated shake');
-  },2000);
-
-
-  function showdiv(){
-    $('#detail2').animate({
-    "width": "360px",
-    "height": "180px",
-    "top" : "250px",
-    "padding" : "20px",
-    },500,'linear');
-
-    $('#detail2').removeClass('hide')
-  }
-
-  window.setTimeout(showdiv,500);
-
-  $('#background').on("tap",function(){
-    $("#detail2").addClass('hide')
-  })
-
-})
-
 
 $("#point3").on("tap",function(){
-  $(this).addClass('animated shake');
+  $(".detail").addClass('hide');
+  $(this).addClass('tada');
   window.setTimeout(function(){
-  $('#point3').removeClass('animated shake');
-  },2000);
-
+  $('.point').removeClass('tada');
+  },1500);
 
   function showdiv(){
     $('#detail3').animate({
     "width": "360px",
     "height": "180px",
-    "top" : "200px",
-    "left" : "100px",
+    "top" : "145px",
+    "left" : "50px",
     "padding" : "20px",
     },500,'linear');
 
@@ -108,17 +80,18 @@ $("#point3").on("tap",function(){
 })
 
 $("#point4").on("tap",function(){
-  $(this).addClass('animated shake');
+  $(".detail").addClass('hide');
+  $(this).addClass('tada');
   window.setTimeout(function(){
-  $('#point4').removeClass('animated shake');
-  },2000);
+  $('.point').removeClass('tada');
+  },1500);
 
 
   function showdiv(){
     $('#detail4').animate({
     "width": "360px",
     "height": "180px",
-    "top" : "150px",
+    "top" : "50px",
     "left" : "275px",
     "padding" : "20px",
     },500,'linear');
@@ -129,8 +102,18 @@ $("#point4").on("tap",function(){
   window.setTimeout(showdiv,500);
 
   $('#background').on("tap",function(){
-    $("#detail4").addClass('hide')
+    $("#detail4").addClass('hide');
   })
 
 })
 
+// 横屏等待画面
+
+window.addEventListener("orientationchange", function() {
+  $("#waiting").removeClass('hide');
+  $(".bubbles").addClass('hide');
+  window.setTimeout(function(){
+    $(".bubbles").removeClass('hide');
+    $("#waiting").addClass('hide');
+  },2500)
+}, false);
