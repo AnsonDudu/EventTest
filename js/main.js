@@ -109,12 +109,16 @@ $("#point4").on("tap",function(){
 
 // 横屏等待画面
 
-window.addEventListener("orientationchange", function() {
+function loading(){
   $("#waiting").removeClass('hide');
   $(".bubbles").addClass('hide');
+
   window.setTimeout(function(){
-    $(".bubbles").removeClass('hide');
-    $("#waiting").addClass('hide');
-    $(".point").addClass('rubberBand');
-  },3000)
-}, false);
+      $(".bubbles").removeClass('hide');
+      $("#waiting").addClass('hide');
+      $(".point").addClass('rubberBand')
+  },2500)
+}
+
+window.addEventListener("load",loading);
+window.addEventListener("orientationchange",loading);
