@@ -115,5 +115,6 @@ window.addEventListener("orientationchange", function() {
   window.setTimeout(function(){
     $(".bubbles").removeClass('hide');
     $("#waiting").addClass('hide');
+    $(".point").addClass('rubberBand');
   },3000)
 }, false);
