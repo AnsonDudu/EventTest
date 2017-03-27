@@ -1,5 +1,5 @@
 // 触摸事件绑定
-$("#point1").on("tap",function(){
+$("#point1,#bubble1").on("tap",function(){
   $(".detail").addClass('hide');
   $(this).addClass('tada');
   window.setTimeout(function(){
@@ -26,7 +26,7 @@ $("#point1").on("tap",function(){
 
 })
 
-$("#point2").on("tap",function(){
+$("#point2,#bubble2").on("tap",function(){
   $(".detail").addClass('hide');
   $(this).addClass('tada');
   window.setTimeout(function(){
@@ -52,7 +52,7 @@ $("#point2").on("tap",function(){
 
 })
 
-$("#point3").on("tap",function(){
+$("#point3,#bubble3").on("tap",function(){
   $(".detail").addClass('hide');
   $(this).addClass('tada');
   window.setTimeout(function(){
@@ -75,11 +75,10 @@ $("#point3").on("tap",function(){
 
   $('#background').on("tap",function(){
     $("#detail3").addClass('hide')
-  })
-
+  });
 })
 
-$("#point4").on("tap",function(){
+$("#point4,#bubble4").on("tap",function(){
   $(".detail").addClass('hide');
   $(this).addClass('tada');
   window.setTimeout(function(){
@@ -106,6 +105,89 @@ $("#point4").on("tap",function(){
   })
 
 })
+
+// 匠人打气值
+function addOil(){
+
+  var count = 0;
+
+  $("#point1,#bubble1").one("tap",function(){
+    count ++;
+    console.log(count);
+    if(count === 1){
+      $("#countImg").attr({src:"images/addoil_1.png"})
+    }
+    else if(count === 2){
+      $("#countImg").attr({src:"images/addoil_2.png"})
+    }
+    else if(count === 3){
+      $("#countImg").attr({src:"images/addoil_3.png"})
+    }
+    else if(count === 4){
+      $("#countImg").attr({src:"images/addoil_4.png"})
+      $("#countP").text("恭喜你已为所有匠人加油打气，想传承这份精神的请点击“了解更多”")
+    }
+  })
+  $("#point2,#bubble2").one("tap",function(){
+    count ++;
+    console.log(count);
+    if(count === 1){
+      $("#countImg").attr({src:"images/addoil_1.png"})
+    }
+    else if(count === 2){
+      $("#countImg").attr({src:"images/addoil_2.png"})
+    }
+    else if(count === 3){
+      $("#countImg").attr({src:"images/addoil_3.png"})
+    }
+    else if(count === 4){
+      $("#countImg").attr({src:"images/addoil_4.png"})
+      $("#countP").text("恭喜你已为所有匠人加油打气，想传承这份精神的请点击“了解更多”")
+    }
+  })
+  $("#point3,#bubble3").one("tap",function(){
+    count ++;
+    console.log(count);
+    if(count === 1){
+      $("#countImg").attr({src:"images/addoil_1.png"})
+    }
+    else if(count === 2){
+      $("#countImg").attr({src:"images/addoil_2.png"})
+    }
+    else if(count === 3){
+      $("#countImg").attr({src:"images/addoil_3.png"})
+    }
+    else if(count === 4){
+      $("#countImg").attr({src:"images/addoil_4.png"})
+      $("#countP").text("恭喜你已为所有匠人加油打气，想传承这份精神的请点击“了解更多”")
+    }
+  })
+  $("#point4,#bubble4").one("tap",function(){
+    count ++;
+    console.log(count);
+    if(count === 1){
+      $("#countImg").attr({src:"images/addoil_1.png"})
+    }
+    else if(count === 2){
+      $("#countImg").attr({src:"images/addoil_2.png"})
+    }
+    else if(count === 3){
+      $("#countImg").attr({src:"images/addoil_3.png"})
+    }
+    else if(count === 4){
+      $("#countImg").attr({src:"images/addoil_4.png"})
+      $("#countP").text("恭喜你已为所有匠人加油打气，想传承这份精神的请点击“了解更多”")
+    }
+  })
+
+
+}
+
+addOil();
+
+
+
+
 
 // 横屏等待画面
 
